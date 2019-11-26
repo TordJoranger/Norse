@@ -1,0 +1,15 @@
+version: "3"
+
+
+
+services: 
+  web:
+    build: ./Backend
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+
+    volumes:
+      - ./backend:/app
+      - /app/DevTest/bin
+      - /app/DevTest/obj

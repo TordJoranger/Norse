@@ -16,14 +16,14 @@ namespace DevTest.Controllers
         }
 
         [HttpGet]
-        public ActionResult<Route> Index(string start, string destination)
+        public ActionResult<Route> Index(string from, string to)
         {
-            if (start == null || destination == null)
+            if (from == null || to == null)
             {
                 return BadRequest();
             }
 
-            return _service.GetRoute(start, destination);
+            return _service.GetRoute(from, to);
         }
 
     }

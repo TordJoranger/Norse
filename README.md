@@ -1,7 +1,7 @@
 # Norse
 dev test
 
-listening on http://5000
+listening on http 5000
 run with "docker-compose up"
 
 
